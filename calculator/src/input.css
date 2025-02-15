@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme1 {
+    --vdesablue: 222, 26%, 31%;
+    --whitecol: 0, 0%, 100%;
+    --keytext: 221, 14%, 31%;
+    --lorange: 6, 63%, 50%;
+    --vddarkblue: 223, 31%, 20%;
+    --vddeblue: 224, 36%, 15%;
+    --bordern: 30, 25%, 89%;
+    --cyanb: 222, 26%, 31%;
+}
+
+.theme2 {
+    --vdesablue: 0, 0%, 90%;
+    --whitecol: 60, 10%, 19%;
+    --lorange: 25, 98%, 40%;
+    --keytext: 60, 10%, 19%;
+    --vddarkblue: 0, 5%, 81%;
+    --cyanb: 185, 42%, 37%;
+    --vddeblue: 0, 0%, 93%;
+    --bordern: 45, 7%, 89%;
+}
+
+.theme3 {
+    --vdesablue: 268, 75%, 9%;
+    --whitecol: 52, 100%, 62%;
+    --lorange: 176, 100%, 44%;
+    --keytext: 52, 100%, 62%;
+    --vddarkblue: 268, 71%, 12%;
+    --vddeblue: 268, 71%, 12%;
+    --bordern: 268, 47%, 21%;
+    --bottoms: 0px 5px 1px hsl(290, 70%, 36%),
+}
