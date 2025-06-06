@@ -10,104 +10,122 @@
 </head>
 
 <body>
-    <div class="theme1  flex bg-vdesablue justify-center h-lvh w-screen " id="main">
-        <div class="m-20 pr-8 pl-8 " id="calc">
-            <header class="flex justify-between gap-64 text-lg font-bold text-whitecol text-center">
+    <div class="theme1  md:flex bg-vdesablue justify-center h-lvh md:w-screen " id="main">
+        <div class=" mr-4 ml-4 md:m-20 pr-2 pl-2 md:pr-8 md:pl-8 " id="calc">
+            <header class="flex justify-between md:gap-64 text-lg font-bold text-whitecol text-center">
                 <h1 class="text-2xl text-center mt-6">calc</h1>
                 <div class="flex justify-center gap-4 text-center  ">
                     <span class="uppercase  text-center align-middle mt-7">theme</span>
                     <div class=" flex justify-center align-middle flex-col">
-                        <div class="flex justify-center gap-5 text-lg font-bold text-whitecol ">
-                            <button id="theme1">1</button>
+                        <div class="flex  justify-center gap-5 text-lg font-bold text-whitecol ">
+                            <button id="theme1" class="">1</button>
                             <button id="theme2">2</button>
                             <button id="theme3">3</button>
                         </div>
-                        <div id="thChanger" class=" relative w-24 h-9 bg-vddarkblue rounded-full p-2">
-                            <div id="toggle" class="bg-lorange absolute rounded-full w-5 h-5"></div>
+                        <div class=" relative w-24 h-9 bg-vddarkblue rounded-full p-2">
+                            <div id="circle" class=" absolute bg-lorange rounded-full w-5 h-5"></div>
                         </div>
                     </div>
                 </div>
             </header>
             <section
-                class=" mt-5  rounded-md flex justify-end p-4 bg-vddeblue  min-w-fit text-3xl font-bold text-whitecol  h-24">
+                class=" mt-5  rounded-md flex justify-end p-4 bg-vddeblue min-w-44 md:min-w-fit text-3xl font-bold text-whitecol  h-16 md:h-24">
                 <div class="">
                     <span id="result">0</span>
                 </div>
             </section>
-            <section id="calcu" class=" p-5 mt-5 rounded-md bg-vddeblue min-w-fit min-h-fit">
+            <section id="calcu" class="  p-5 mt-5 rounded-md bg-vddeblue w-full md:min-w-fit md:min-h-fit">
                 <div class=" text-2xl font-bold flex justify-between" id="symbols">
                     <div id="numbers" class="grid grid-cols-4 gap-0 ">
-                        <button id="number7"
-                            class="  text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('7')">
+
                             7
                         </button>
-                        <button id="number8"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class="number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('8')">
                             8
                         </button>
-                        <button id="number9"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern   w-16 h-20 md:w-24 md:h-12 "
+                            onclick="f1('9')">
                             9
                         </button>
-                        <button id="deleteb"
-                            class=" shadow-bottoms rounded-md ml-0 m-3 border-solid p-1 text-center uppercase text-white  border-cyanb  bg-cyanb w-24 h-12  ">
+                        <button
+                            class=" shadow-bottoms rounded-md ml-0 m-3 border-solid p-1 text-center uppercase text-white  border-cyanb  bg-cyanb  w-20 h-20 md:w-24 md:h-12   ">
                             del
                         </button>
-                        <button id="number4"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class="number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('4')">
                             4
                         </button>
-                        <button id="number5"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-16 h-20 md:w-24 md:h-12 "
+                            onclick="f1('5')">
                             5
                         </button>
-                        <button id="number6"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('6')">
                             6
                         </button>
-                        <button id="add"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class="  text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-20 h-20 md:w-24 md:h-12  "
+                            onclick="f2('+')">
                             +
                         </button>
-                        <button id="number1"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class="  number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('1')">
                             1
                         </button>
-                        <button id="number2"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class="  number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('2')">
                             2
                         </button>
-                        <button id="number3"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('3')">
                             3
                         </button>
-                        <button id="sub"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-20 h-20 md:w-24 md:h-12  "
+                            onclick="f2('-')">
                             -
                         </button>
-                        <button id="dot"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid  p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class="number text-keytext rounded-md ml-0 m-3 border-solid  p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('.')">
                             .
                         </button>
-                        <button id="number0"
-                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" number text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f1('0')">
                             0
                         </button>
-                        <button id="devide"
-                            class="text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-16 h-20 md:w-24 md:h-12  "
+                            onclick="f2('/')">
                             /
                         </button>
-                        <button id="multiply"
-                            class="text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern w-24 h-12  ">
+                        <button
+                            class=" text-keytext rounded-md ml-0 m-3 border-solid p-1 text-center border-bordern  bg-bordern  w-20 h-20 md:w-24 md:h-12  "
+                            onclick="f2('*')">
                             x
                         </button>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 font-bold text-2xl gap-4  text-white">
+                <div class="grid grid-cols-2 font-bold text-2xl gap-2 md:gap-4  text-white">
                     <button id="reset"
-                        class="rounded-md  uppercase border-solid p-3 text-center border-cyanb  bg-cyanb ">reset</button>
+                        class="rounded-md  uppercase border-solid p-3 text-center border-cyanb  bg-cyanb "
+                        onclick="f4()">reset</button>
                     <button id="getresult"
-                        class="rounded-md mr-3 uppercase border-solid p-3 text-center border-lorange  bg-lorange">=</button>
+                        class="rounded-md operator mr-3 w-full md:min-w-max uppercase border-solid p-3 text-center border-lorange  bg-lorange"
+                        onclick="f2('')">=</button>
             </section>
         </div>
     </div>
